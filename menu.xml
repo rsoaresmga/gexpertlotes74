@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+  <menuitem label="Trocar Empresa">
+    <action>UnitSelect</action>
+    <icon>fas:share-square fa-fw</icon>
+  </menuitem>
+  <menuitem label="Menu">
+    <icon>fas:map-signs fa-fw</icon>
+    <menu>
+      <menuitem label="Empresas">
+        <action>EmpresasList</action>
+        <icon>fas:university fa-fw</icon>
+      </menuitem>
+      <menuitem label="Parâmetros da Empresa">
+        <action>ConfiguracoesForm#method=onEdit</action>
+        <icon>fas:cog fa-fw</icon>
+      </menuitem>
+      <menuitem label="Empreendimentos">
+        <action>EmpreendimentosList</action>
+        <icon>fas:building fa-fw</icon>
+      </menuitem>
+      <menuitem label="Plano de Contas">
+        <action>PlanoList</action>
+        <icon>fas:list fa-fw</icon>
+      </menuitem>
+      <menuitem label="Históricos">
+        <action>HistoricosList</action>
+        <icon>fas:thumbtack fa-fw</icon>
+      </menuitem>
+      <menuitem label="Estados">
+        <action>EstadosList</action>
+        <icon>fas:map-marked-alt fa-fw</icon>
+      </menuitem>
+      <menuitem label="Municípios">
+        <action>MunicipiosList</action>
+        <icon>fas:map-marker-alt fa-fw</icon>
+      </menuitem>
+      <menuitem label="Infraestrutura">
+        <action>InfraestruturaList</action>
+        <icon>fas:calculator fa-fw</icon>
+      </menuitem>
+      <menuitem label="Clientes / Contadores / Sócios">
+        <action>EntidadesList</action>
+        <icon>fas:users fa-fw</icon>
+      </menuitem>
+      <menuitem label="Vendas">
+        <action>VendasList</action>
+        <icon>fas:cash-register fa-fw</icon>
+      </menuitem>
+      <menuitem label="Apuração Mensal">
+        <action>ApuracaoForm</action>
+        <icon>fas:play-circle fa-fw</icon>
+      </menuitem>
+      <menuitem label="Arquivos">
+        <icon>far:hdd fa-fw</icon>
+        <menu>
+          <menuitem label="Gerar Lançamentos Contábeis">
+            <action>ExportarLctoCtb</action>
+            <icon>fas:cloud-download-alt fa-fw</icon>
+          </menuitem>
+          <menuitem label="Gerar DIMOB">
+            <action>ExportarDimob</action>
+            <icon>fas:cloud-download-alt fa-fw</icon>
+          </menuitem>
+          <menuitem label="Gerar SPED F200">
+            <action>ExportarF200</action>
+            <icon>fas:cloud-download-alt fa-fw</icon>
+          </menuitem>
+          <menuitem label="Importar Plano de Contas">
+            <action>ImportarPlanoCsv</action>
+            <icon>fas:cloud-upload-alt fa-fw</icon>
+          </menuitem>
+          <menuitem label="Importar Históricos">
+            <action>ImportarHistoricosCsv</action>
+            <icon>fas:cloud-upload-alt fa-fw</icon>
+          </menuitem>
+          <menuitem label="Importar Recebimentos">
+            <action>ImportarRecebimentos</action>
+            <icon>fas:dollar-sign fa-fw</icon>
+          </menuitem>
+        </menu>
+      </menuitem>
+      <menuitem label="Relatórios">
+        <icon>far:newspaper fa-fw</icon>
+        <menu>
+          <menuitem label="Cadastros">
+            <menu>
+              <menuitem label="Empresas">
+                <action>RelEmpresas</action>
+                <icon>fas:university fa-fw</icon>
+              </menuitem>
+              <menuitem label="Empreendimentos">
+                <action>RelEmpreendimentos</action>
+                <icon>fas:building fa-fw</icon>
+              </menuitem>
+              <menuitem label="Plano Contas">
+                <action>RelPlano</action>
+                <icon>fas:list fa-fw</icon>
+              </menuitem>
+              <menuitem label="Lotes">
+                <action>RelLotes</action>
+                <icon>fas:sitemap fa-fw</icon>
+              </menuitem>
+              <menuitem label="Históricos">
+                <action>RelHistoricos</action>
+                <icon>fas:thumbtack fa-fw</icon>
+              </menuitem>
+              <menuitem label="Entidades">
+                <action>RelEntidades</action>
+                <icon>fas:users fa-fw</icon>
+              </menuitem>
+            </menu>
+          </menuitem>
+          <menuitem label="Lançamentos">
+            <menu>
+              <menuitem label="Relatório Infraestrutura">
+                <action>RelInfraestrutura</action>
+                <icon>fas:calculator fa-fw</icon>
+              </menuitem>
+              <menuitem label="Relatório Vendas">
+                <action>RelVendas</action>
+                <icon>far:cash-register fa-fw</icon>
+              </menuitem>
+              <menuitem label="Relatório Vendas Parcelas">
+                <action>RelVendasParcelas</action>
+                <icon>far:money-bill-alt fa-fw</icon>
+              </menuitem>
+              <menuitem label="Relatório Vendas Parcelas Baixas">
+                <action>RelVendasParcelasBaixas</action>
+                <icon>far:money-bill-alt fa-fw</icon>
+              </menuitem>
+              <menuitem label="Relatório Apurações">
+                <action>RelApuracao</action>
+                <icon>fas:play-circle fa-fw</icon>
+              </menuitem>
+            </menu>
+          </menuitem>
+        </menu>
+      </menuitem>
+      <menuitem label="Consultas">
+        <icon>fas:filter fa-fw</icon>
+        <menu>
+          <menuitem label="Consulta Recebimentos">
+            <action>ConsultaRecebimentos</action>
+            <icon>fas:money-bill-alt fa-fw</icon>
+          </menuitem>
+          <menuitem label="Consulta Lotes">
+            <action>ConsultaLotes</action>
+            <icon>fas:sitemap fa-fw</icon>
+          </menuitem>
+          <menuitem label="Consulta Apurações">
+            <action>ConsultaApuracao</action>
+            <icon>fas:play-circle fa-fw</icon>
+          </menuitem>
+        </menu>
+      </menuitem>
+    </menu>
+  </menuitem>
+  <menuitem label="_t{Administration}">
+    <icon>fas:home fa-fw</icon>
+    <menu>
+      <menuitem label="Dashboard">
+        <action>SystemAdministrationDashboard</action>
+        <icon>fas:tachometer-alt fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{Programs}">
+        <action>SystemProgramList</action>
+        <icon>far:file-code fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{Groups}">
+        <action>SystemGroupList</action>
+        <icon>fas:users fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{Units}">
+        <action>SystemUnitList</action>
+        <icon>fas:university fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{Users}">
+        <action>SystemUserList</action>
+        <icon>fas:user fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{Database explorer}">
+        <action>SystemDatabaseExplorer</action>
+        <icon>fas:database fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{SQL Panel}">
+        <action>SystemSQLPanel</action>
+        <icon>fas:table fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{Menu editor}">
+        <action>SystemMenuEditor</action>
+        <icon>far:edit fa-fw</icon>
+      </menuitem>
+      <menuitem label="PHP Info">
+        <action>SystemPHPInfoView</action>
+        <icon>fas:info-circle fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{Preferences}">
+        <action>SystemPreferenceForm#method=onEdit</action>
+        <icon>fas:cog fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{System information}">
+        <action>SystemInformationView</action>
+        <icon>fas:desktop fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{Files diff}">
+        <action>SystemFilesDiff</action>
+        <icon>fas:file-medical-alt fa-fw</icon>
+      </menuitem>
+    </menu>
+  </menuitem>
+  <menuitem label="_t{Documents}">
+    <icon>far:file-alt fa-fw</icon>
+    <menu>
+      <menuitem label="_t{Send document}">
+        <action>SystemDocumentUploadForm</action>
+        <icon>fas:cloud-upload-alt fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{My documents}">
+        <action>SystemDocumentList</action>
+        <icon>fas:archive fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{Shared with me}">
+        <action>SystemSharedDocumentList</action>
+        <icon>fas:share-alt fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{Categories}">
+        <action>SystemDocumentCategoryFormList</action>
+        <icon>fas:th fa-fw</icon>
+      </menuitem>
+    </menu>
+  </menuitem>
+  <menuitem label="Logs">
+    <icon>fas:desktop fa-fw</icon>
+    <menu>
+      <menuitem label="Dashboard">
+        <action>SystemLogDashboard</action>
+        <icon>fas:tachometer-alt fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{Access Log}">
+        <action>SystemAccessLogList</action>
+        <icon>fas:key fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{Change Log}">
+        <action>SystemChangeLogView</action>
+        <icon>fas:film fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{SQL Log}">
+        <action>SystemSqlLogList</action>
+        <icon>fas:database fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{Request Log}">
+        <action>SystemRequestLogList</action>
+        <icon>fas:globe fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{PHP Log}">
+        <action>SystemPHPErrorLogView</action>
+        <icon>fas:exclamation-triangle fa-fw</icon>
+      </menuitem>
+      <menuitem label="Session dump">
+        <action>SystemSessionDumpView</action>
+        <icon>fas:code fa-fw</icon>
+      </menuitem>
+    </menu>
+  </menuitem>
+  <menuitem label="Logout">
+    <icon>fas:sign-out-alt fa-fw</icon>
+    <menu>
+      <menuitem label="Logout">
+        <action>LoginForm#method=onLogout#static=1</action>
+        <icon>fas:sign-out-alt fa-fw</icon>
+      </menuitem>
+    </menu>
+  </menuitem>
+</menu>

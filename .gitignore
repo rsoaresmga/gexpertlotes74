@@ -1,0 +1,14 @@
+/tmp
+/vendor
+/manuais
+/layouts
+/files
+/atualizacao
+/app/database
+/app/config
+/app/forms
+/app/templates/theme1
+/app/templates/theme2
+/app/templates/theme4
+/sql
+/lib

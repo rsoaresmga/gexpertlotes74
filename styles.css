@@ -1,0 +1,65 @@
+header {
+    position: fixed !important;
+}
+
+#adianti_content {
+    margin-top: 50px !important;
+}
+
+.pull-left.image {
+    display: none !important;
+}
+
+li.user-header img {
+    display: none !important;
+}
+
+li.user-header {
+    padding: 80px !important;
+}
+
+@media (max-width: 767px) {
+    .fb-inline-field-container.form-line {
+        width: 100% !important;
+        padding-right: 4px !important;
+    }
+
+    .fb-inline-field-container, .fb-inline-field-container button {
+        width: 100% !important;
+        margin-left: 0 !important;
+        padding-right: 4px;
+    }
+
+    .panel-footer.card-footer button, .panel-footer.card-footer a[class*='btn'] {
+        width: 100%;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+}
+
+.tdatagrid_cell.action {
+    width: 28px !important;
+}
+
+.lightyellow {
+    color: #FBBC05;
+}
+
+.table td, .table th {
+    padding: 0.75em !important;
+}
+
+table tr th.tdatagrid_action, table tbody tr td.tdatagrid_cell.action {
+    padding: 0 !important;
+}
+
+table tbody tr td.tdatagrid_cell.action a {
+    position: relative !important;
+    top: 8px;
+    left: 8px;
+}
+
+table tbody[style*='scroll'] {
+    width: calc(100% + 14px) !important;
+    overflow-x: hidden !important;
+}
